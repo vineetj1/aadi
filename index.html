@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday, My Love 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="floating-hearts"></div>
+
+<div class="slides-container">
+
+<!-- SLIDE 1 -->
+<div class="slide active" id="slide1">
+    <div class="slide-content">
+        <h1 class="tease-text">Are you ready for your birthday surprise? 😏🎁</h1>
+
+        <div class="button-group">
+            <button class="btn-yes" onclick="goToSlide(2)">YES 💖</button>
+            <button class="btn-no" id="noButton">NO 🙄</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- SLIDE 2 -->
+<div class="slide" id="slide2">
+    <div class="slide-content">
+
+        <div class="birthday-heart">💖</div>
+
+        <h2 class="birthday-text">Happy Birthday, my love ❤️</h2>
+
+        <p class="subtitle-text">
+            My safest place. My favorite human. My forever.
+        </p>
+
+        <button class="btn-next" onclick="goToSlide(3)">Next 💌</button>
+    </div>
+
+    <div class="confetti"></div>
+</div>
+
+
+<!-- SLIDE 3 -->
+<div class="slide" id="slide3">
+    <div class="slide-content">
+
+        <div class="car">🏎️</div>
+
+        <h2 class="theme-text">If love was a race…</h2>
+        <p class="theme-subtitle">You'd always finish first in my heart 🏁❤️</p>
+
+        <button class="btn-next" onclick="goToSlide(4)">Next</button>
+    </div>
+</div>
+
+
+<!-- SLIDE 4 -->
+<div class="slide" id="slide4">
+    <div class="slide-content">
+
+        <div class="bat">🏏</div>
+        <div class="ball" id="ball">⚾</div>
+
+        <h2 class="theme-text">Every time you smile…</h2>
+        <p class="theme-subtitle">It's a six straight into my heart 💕</p>
+
+        <button class="btn-next" onclick="goToSlide(5)">Next</button>
+    </div>
+</div>
+
+
+<!-- SLIDE 5 -->
+<div class="slide" id="slide5">
+    <div class="slide-content">
+
+        <div class="letter">
+            <p id="letterText"></p>
+        </div>
+
+        <button class="btn-next" onclick="goToSlide(6)">One last thing…</button>
+    </div>
+</div>
+
+
+<!-- SLIDE 6 -->
+<div class="slide" id="slide6">
+    <div class="slide-content">
+
+        <h1 class="final-text">
+            I love you more than food…<br>
+            and that says a LOT 😌❤️
+        </h1>
+
+        <h2 class="final-sub">Happy Birthday, baby 🎂💖</h2>
+
+        <div class="kiss">💋</div>
+    </div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

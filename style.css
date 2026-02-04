@@ -1,0 +1,187 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+height:100vh;
+overflow:hidden;
+background:linear-gradient(135deg,#ffe6f0,#fff5f5);
+}
+
+/* SLIDES */
+
+.slides-container{
+position:relative;
+height:100vh;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:0;
+visibility:hidden;
+transition:0.8s;
+}
+
+.slide.active{
+opacity:1;
+visibility:visible;
+}
+
+.slide-content{
+text-align:center;
+max-width:700px;
+padding:20px;
+}
+
+/* SLIDE 1 */
+
+.tease-text{
+font-family:'Dancing Script',cursive;
+font-size:3rem;
+color:#ff4da6;
+margin-bottom:40px;
+}
+
+.button-group{
+display:flex;
+gap:20px;
+justify-content:center;
+}
+
+button{
+padding:14px 30px;
+border:none;
+border-radius:40px;
+font-size:1.2rem;
+cursor:pointer;
+background:linear-gradient(135deg,#ff4da6,#ff6b9d);
+color:white;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+/* SLIDE 2 */
+
+#slide2{
+background:linear-gradient(135deg,#fff0f5,#ffe6f0);
+}
+
+.birthday-heart{
+font-size:120px;
+animation:heartbeat 1.2s infinite;
+text-shadow:0 0 40px rgba(255,20,147,.7);
+}
+
+@keyframes heartbeat{
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.15);}
+}
+
+.birthday-text{
+font-family:'Dancing Script';
+font-size:3.5rem;
+color:#ff4da6;
+margin-top:10px;
+}
+
+.subtitle-text{
+font-size:1.5rem;
+color:#ff6b9d;
+margin-top:10px;
+}
+
+/* SLIDE 3 */
+
+.car{
+font-size:90px;
+animation:drive 4s infinite linear;
+}
+
+@keyframes drive{
+0%{transform:translateX(-200px);}
+100%{transform:translateX(200px);}
+}
+
+/* SLIDE 4 */
+
+.bat{
+font-size:80px;
+}
+
+.ball{
+font-size:40px;
+animation:hit 2s infinite;
+}
+
+@keyframes hit{
+0%{transform:translateX(0);}
+50%{transform:translateX(200px) translateY(-120px);}
+100%{opacity:0;}
+}
+
+/* SLIDE 5 */
+
+.letter{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(255,105,180,.3);
+font-family:'Dancing Script';
+font-size:1.8rem;
+color:#ff4da6;
+}
+
+/* SLIDE 6 */
+
+#slide6{
+background:linear-gradient(135deg,#ffb3d9,#ff80c4);
+color:white;
+}
+
+.final-text{
+font-family:'Dancing Script';
+font-size:3.5rem;
+}
+
+.final-sub{
+font-family:'Dancing Script';
+font-size:2.5rem;
+margin-top:10px;
+}
+
+.kiss{
+font-size:70px;
+margin-top:20px;
+animation:float 2s infinite;
+}
+
+@keyframes float{
+50%{transform:translateY(-20px);}
+}
+
+/* FLOATING HEARTS */
+
+.floating-hearts::before{
+content:"💖";
+position:absolute;
+font-size:20px;
+left:10%;
+animation:floatUp 10s infinite;
+opacity:.4;
+}
+
+@keyframes floatUp{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-100px);}
+}
